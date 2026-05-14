@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pankaj Tiwari — Author, AI Enthusiast, Psychology Writer, Technology Enthusiast, Independent Researcher, Storyteller, Creative Thinker. Where psychology meets technology.">
+    <meta name="keywords" content="Pankaj Tiwari, Author, AI, Psychology, Philosophy, Technology, Writer, Researcher, Storyteller">
+    <meta name="author" content="Pankaj Tiwari">
+    <meta property="og:title" content="Pankaj Tiwari — Portfolio">
+    <meta property="og:description" content="Where psychology meets technology. Exploring intelligence beyond machines.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#050505">
+    <title>Pankaj Tiwari | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-line"></div>
+            <span class="loader-text">Pankaj Tiwari</span>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Floating Gradient Orbs -->
+    <div class="orb orb-1" id="orb1"></div>
+    <div class="orb orb-2" id="orb2"></div>
+    <div class="orb orb-3" id="orb3"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">PT</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#books" class="nav-link" data-section="books">Books</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+                <a href="#mythodia" class="nav-link" data-section="mythodia">Mythodia</a>
+                <a href="#connect" class="nav-link" data-section="connect">Connect</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-container">
+                <div class="hero-badge">Multidisciplinary Creator</div>
+                <h1 class="hero-name">
+                    <span class="hero-name-line">Pankaj</span>
+                    <span class="hero-name-line gold">Tiwari</span>
+                </h1>
+                <div class="hero-roles">
+                    <span class="hero-role-static">I am a</span>
+                    <span class="hero-role-dynamic" id="typingText"></span>
+                    <span class="hero-cursor">|</span>
+                </div>
+                <p class="hero-tagline" id="heroTagline">Where psychology meets technology.</p>
+                <div class="hero-cta">
+                    <a href="#about" class="btn-primary">Explore My Work</a>
+                    <a href="#connect" class="btn-secondary">Get In Touch</a>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">About</span>
+                    <h2 class="section-title">The Mind Behind <span class="gold">the Work</span></h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card glass-card">
+                        <div class="about-icon">&#9670;</div>
+                        <p class="about-text">
+                            I am <strong>Pankaj Tiwari</strong> — a multidisciplinary creator who lives at the intersection of <span class="gold">artificial intelligence</span>, <span class="gold">psychology</span>, and <span class="gold">philosophy</span>. My work is not confined to a single discipline; it flows through the spaces between logic and emotion, between machine intelligence and human consciousness.
+                        </p>
+                        <p class="about-text">
+                            With a deep fascination for <strong>human behavior</strong>, <strong>deep learning</strong>, and <strong>storytelling</strong>, I explore how technology shapes our minds — and how our minds, in turn, shape technology. Every project I undertake is a bridge between analytical rigor and creative intuition.
+                        </p>
+                    </div>
+                    <div class="about-card glass-card">
+                        <div class="about-icon">&#9671;</div>
+                        <p class="about-text">
+                            As a self-driven learner, I've immersed myself in <strong>critical thinking</strong>, <strong>communication strategy</strong>, <strong>digital creativity</strong>, and the profound study of <strong>human perception</strong>. I believe that true innovation emerges when we understand not just the code, but the consciousness behind it.
+                        </p>
+                        <p class="about-text">
+                            My journey is one of continuous exploration — writing about the human condition, building with emerging technologies, and always asking: <em>"What lies beneath the surface of thought?"</em>
+                        </p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="7">0</span>
+                        <span class="stat-label">Years of Learning</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-label">Books Authored</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="16">0</span>
+                        <span class="stat-label">Core Skills</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision / Quote Section -->
+        <section class="vision" id="vision">
+            <div class="section-container">
+                <div class="vision-content">
+                    <div class="vision-quote-mark">"</div>
+                    <blockquote class="vision-quote">
+                        Because every thought shapes reality. The boundary between what we think and what we build is thinner than we imagine.
+                    </blockquote>
+                    <p class="vision-attribution">— Pankaj Tiwari</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books Section -->
+        <section class="books" id="books">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">Books</span>
+                    <h2 class="section-title">Published <span class="gold">Works</span></h2>
+                </div>
+                <div class="books-grid">
+                    <div class="book-card" data-tilt>
+                        <div class="book-card-inner">
+                            <div class="book-glow"></div>
+                            <div class="book-spine"></div>
+                            <h3 class="book-title">The Rise of Thoughts <span class="gold">Vol-1</span></h3>
+                            <p class="book-desc">A philosophical and psychological exploration of thoughts, perception, emotions, identity, and consciousness. A journey into the architecture of the mind.</p>
+                            <div class="book-tags">
+                                <span>Philosophy</span><span>Psychology</span><span>Consciousness</span>
+                            </div>
+                            <div class="book-status">Available</div>
+                        </div>
+                    </div>
+                    <div class="book-card" data-tilt>
+                        <div class="book-card-inner">
+                            <div class="book-glow"></div>
+                            <div class="book-spine"></div>
+                            <h3 class="book-title">Control Psychology: <span class="gold">The Illusory Game</span></h3>
+                            <p class="book-desc">A deep study of manipulation, emotional influence, perception engineering, and hidden psychological systems that govern human interaction.</p>
+                            <div class="book-tags">
+                                <span>Psychology</span><span>Influence</span><span>Perception</span>
+                            </div>
+                            <div class="book-status">Available</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">Expertise</span>
+                    <h2 class="section-title">Skills & <span class="gold">Capabilities</span></h2>
+                </div>
+                <div class="skills-grid" id="skillsGrid">
+                    <!-- Skills populated by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications" id="certifications">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">Credentials</span>
+                    <h2 class="section-title">Certifications & <span class="gold">Learning</span></h2>
+                </div>
+                <div class="cert-tabs">
+                    <button class="cert-tab active" data-tab="ibm">IBM</button>
+                    <button class="cert-tab" data-tab="saylor">Saylor Academy</button>
+                    <button class="cert-tab" data-tab="google">Google</button>
+                </div>
+                <div class="cert-content active" id="cert-ibm">
+                    <div class="cert-grid" id="ibmCerts"></div>
+                </div>
+                <div class="cert-content" id="cert-saylor">
+                    <div class="cert-grid" id="saylorCerts"></div>
+                </div>
+                <div class="cert-content" id="cert-google">
+                    <div class="cert-grid" id="googleCerts"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mythodia Section -->
+        <section class="mythodia" id="mythodia">
+            <div class="section-container">
+                <div class="mythodia-content">
+                    <div class="mythodia-glow"></div>
+                    <span class="mythodia-label">A Creative Universe</span>
+                    <h2 class="mythodia-title">Mythodia</h2>
+                    <p class="mythodia-tagline">"Because every story is a world."</p>
+                    <p class="mythodia-desc">A literary sanctuary where imagination meets depth. Mythodia is my creative cosmos — a space where stories breathe, characters live, and every narrative opens a door to a new dimension of thought.</p>
+                    <a href="https://mythodia001.wordpress.com/" target="_blank" rel="noopener noreferrer" class="btn-mythodia">Explore Mythodia &#8599;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- What I Believe Section -->
+        <section class="beliefs" id="beliefs">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">Philosophy</span>
+                    <h2 class="section-title">What I <span class="gold">Believe</span></h2>
+                </div>
+                <div class="beliefs-grid">
+                    <div class="belief-card glass-card">
+                        <span class="belief-number">01</span>
+                        <h3>Intelligence Is Multidimensional</h3>
+                        <p>True intelligence cannot be reduced to algorithms or IQ scores. It lives in the space between logic and empathy, analysis and intuition.</p>
+                    </div>
+                    <div class="belief-card glass-card">
+                        <span class="belief-number">02</span>
+                        <h3>Every Thought Shapes Reality</h3>
+                        <p>The most powerful technology ever created is the human mind. What we think, we become. What we believe, we build.</p>
+                    </div>
+                    <div class="belief-card glass-card">
+                        <span class="belief-number">03</span>
+                        <h3>Stories Are the Original Code</h3>
+                        <p>Before programming languages, humans programmed each other through stories. Narrative is the oldest form of data transmission.</p>
+                    </div>
+                    <div class="belief-card glass-card">
+                        <span class="belief-number">04</span>
+                        <h3>Technology Must Serve Consciousness</h3>
+                        <p>AI and technology are mirrors. They reflect our values, our biases, and our potential. The goal is not smarter machines — it's wiser humans.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect / Social Links Section -->
+        <section class="connect" id="connect">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-label">Connect</span>
+                    <h2 class="section-title">Let's <span class="gold">Build Together</span></h2>
+                </div>
+                <p class="connect-intro">I'm always open to meaningful conversations, collaborations, and projects that push boundaries. Reach out through any of these channels.</p>
+                <div class="social-grid">
+                    <a href="https://www.instagram.com/pankaj_tiwari.0?igsh=MWhnejFqaTJ6NjV6ag==" target="_blank" rel="noopener noreferrer" class="social-card glass-card">
+                        <div class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+                        </div>
+                        <span class="social-name">Instagram</span>
+                        <span class="social-handle">@pankaj_tiwari.0</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pankaj-tiwari-667a78324" target="_blank" rel="noopener noreferrer" class="social-card glass-card">
+                        <div class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><line x1="8" y1="10" x2="8" y2="18"/><line x1="8" y1="6" x2="8" y2="6.5"/><path d="M12 18v-5a2 2 0 014 0v5"/></svg>
+                        </div>
+                        <span class="social-name">LinkedIn</span>
+                        <span class="social-handle">Pankaj Tiwari</span>
+                    </a>
+                    <a href="https://github.com/pankajtiwari-art" target="_blank" rel="noopener noreferrer" class="social-card glass-card">
+                        <div class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12c0-2 1.5-3.5 4-3.5s4 1.5 4 3.5c0 1.5-.8 2.8-2 3.5v1"/><circle cx="12" cy="8" r="1"/></svg>
+                        </div>
+                        <span class="social-name">GitHub</span>
+                        <span class="social-handle">pankajtiwari-art</span>
+                    </a>
+                    <a href="https://www.threads.com/@pankaj_tiwari.0" target="_blank" rel="noopener noreferrer" class="social-card glass-card">
+                        <div class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <span class="social-name">Threads</span>
+                        <span class="social-handle">@pankaj_tiwari.0</span>
+                    </a>
+                    <a href="https://mythodia001.wordpress.com/" target="_blank" rel="noopener noreferrer" class="social-card glass-card">
+                        <div class="social-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10"/><path d="M12 2a15.3 15.3 0 00-4 10 15.3 15.3 0 004 10"/></svg>
+                        </div>
+                        <span class="social-name">Mythodia</span>
+                        <span class="social-handle">mythodia001.wordpress.com</span>
+                    </a>
+                </div>
+                <div class="connect-cta">
+                    <p>Have a project in mind? Let's create something extraordinary.</p>
+                    <a href="mailto:pankaj@example.com" class="btn-primary">Send a Message</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <span class="footer-logo">PT</span>
+                <p class="footer-tagline">Exploring intelligence beyond machines.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Pankaj Tiwari. Crafted with depth & intention.</p>
+                <p class="footer-credit">Where psychology meets technology.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
